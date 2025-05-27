@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindTech Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header .logo span {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        header .contact-info {
+            font-size: 1em;
+        }
+        nav {
+            background-color: white;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Home Section with Centered Content & Background Image */
+       
+  #home {
+    background: url("C:\Users\shara\OneDrive\Desktop\Background.jpg" ) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(29, 23, 132); /* Text color for contrast */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(105, 5, 5, 0.7); /* Adds text readability */
+}
+
+
+#home h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    max-width: 600px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+        /* Client Testimonials */
+        .testimonials {
+            background-color: #f5f5f5;
+            padding: 40px;
+            text-align: center;
+        }
+        .testimonials .testimonial {
+            margin: 20px auto;
+            max-width: 600px;
+            font-style: italic;
+        }
+        /* Call to Action Section */
+.cta-section {
+    background-color: #eb780a;
+    color: white;
+    text-align: center;
+    padding: 80px;  /* Increased padding for more height */
+    border-radius: 50px;
+    max-width: 90%;  /* Increased width */
+    margin: 50px auto;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;  /* Slightly larger heading */
+    font-weight: bold;
+}
+
+.cta-section p {
+    font-size: 1.4em;  /* Slightly larger paragraph */
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 30px; /* Increased margin for spacing */
+    padding: 15px 30px; /* Larger button */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+        /* Our Expertise Section */
+        .expertise {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 60px 10%;
+            background-color: white;
+        }
+
+        .expertise-content {
+            width: 45%;
+        }
+
+        .expertise-content h3 {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .expertise-content h1 {
+            font-size: 2.8em;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .underline {
+            width: 50px;
+            height: 3px;
+            background-color: #eb780a;
+            margin: 15px 0;
+        }
+
+        .expertise-content p {
+            color: #555;
+            font-size: 1.1em;
+            max-width: 450px;
+        }
+
+        .expertise-services {
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url('image.png') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 50px;
+        }
+        .content {
+            max-width: 600px;
+        }
+        .content h3 {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .content h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background: white;
+            color: #6a1b9a;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            width: 30%;
+        }
+        .footer-section h3 {
+            color: #00aaff;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .text-content {
+            width: 50%;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .highlight {
+            border-bottom: 3px solid #f78f1e;
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        .feature {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .feature img {
+            width: 20px;
+            height: 20px;
+        }
+        .feature p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .image-content {
+            width: 50%;
+            text-align: right;
+        }
+        .image-content img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        .testimonials {
+            display: flex;
+            gap: 20px;
+        }
+        .testimonial-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        .testimonial-card img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+         /* Banner Section (Careers) */
+         .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url("C:\Users\shara\OneDrive\Desktop\360_F_492483827_1ZroF5jdz8ZvYlpsjT90Hb3kxytJ9AQI.jpg") no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 50px;
+        }
+        .banner .content {
+            max-width: 600px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .containers {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .text-content {
+            width: 50%;
+        }
+
+        .text-content h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .text-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .text-content button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .text-content button:hover {
+            background-color: #333;
+        }
+
+        .image-content {
+            width: 45%;
+            position: relative;
+        }
+
+        .image-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .overlay-image {
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        /* Move overlay slightly up on hover */
+        .image-content:hover .overlay-image {
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="C:\Users\shara\OneDrive\Desktop\logo--1.PNG" alt="MindTech Solutions Logo">
+        <span>MindTech Solutions</span>
+    </div>
+    <div class="contact-info">
+        <span>&#9993; info@mindtech.com</span> | 
+        <span>&#128222; 080 6951 0451‬</span>
+    </div>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#company">Company</a>
+    <a href="#services">Services</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#technologies">Technologies</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h1>Welcome to MindTech Solutions</h1>
+    <p>We offer innovative technology solutions.</p>
+</section>
+<body>
+
+    <div class="containers">
+        <!-- Left Text Section -->
+        <div class="text-content">
+            <h2>Why Choose</h2>
+            <h1>MindTech Solutions?</h1>
+            <p>At Mindtech Solutions, we are more than just an IT services company – we are your trusted partner in navigating the complex landscape of technology. 
+               Established with a vision to empower businesses with innovative solutions, we have been at the forefront of delivering exceptional IT services tailored to 
+               meet the evolving needs of our clients.</p>
+            
+            <h2>Our Mission</h2>
+            <p>Our mission is simple yet ambitious: to empower businesses of all sizes to thrive in the digital age. We achieve this by providing comprehensive IT solutions 
+               that drive efficiency, innovation, and growth, while always prioritizing the security and integrity of our clients' data and systems.</p>
+
+            <button>KNOW MORE</button>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="image-content">
+            <img src="C:\Users\shara\OneDrive\Desktop\Professional women.jpg" alt="Professional Woman">
+            <img src="C:\Users\shara\OneDrive\Desktop\team effort.jpg" alt="Team Discussion" class="overlay-image">
+           
+        </div>
+    </div>
+
+</body>
+
+<!-- Our Expertise Section -->
+<section class="expertise">
+  <div class="expertise-content">
+      <h3>OUR EXPERTISE</h3>
+      <h1>Comprehensive IT &<br> Consulting Services</h1>
+      <div class="underline"></div>
+      <p>Explore our wide range of services designed to elevate your business, enhance efficiency, and drive growth through innovative technology solutions.</p>
+  </div>
+  <div class="expertise-services">
+      <div class="service">
+          <h2>01.</h2>
+          <h3>Cloud Solutions</h3>
+          <p>Seamless cloud integration for enhanced flexibility and scalability.</p>
+          <a href="#">LEARN MORE</a>
+      </div>
+      <div class="service">
+          <h2>02.</h2>
+          <h3>Network Management</h3>
+          <p>Comprehensive management for reliable and efficient networks.</p>
+          <a href="#">LEARN MORE</a>
+      </div>
+      <div class="service">
+          <h2>03.</h2>
+          <h3>Data Analytics</h3>
+          <p>Transform your data into actionable insights.</p>
+          <a href="#">LEARN MORE</a>
+      </div>
+      <div class="service">
+          <h2>04.</h2>
+          <h3>IT Strategy Consulting</h3>
+          <p>Strategic planning for optimal IT performance.</p>
+          <a href="#">LEARN MORE</a>
+      </div>
+  </div>
+</section>
+
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="text-content">
+                <h3>WHY CHOOSE US</h3>
+                <h2>Unmatched Value in IT Consulting</h2>
+                <div class="highlight"></div>
+                <div class="feature">
+                    <img src="check-icon.png" alt="check">
+                    <div>
+                        <strong>Customized Solutions</strong>
+                        <p>We tailor our IT services to meet the unique needs of each client, ensuring maximum effectiveness and satisfaction.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="check-icon.png" alt="check">
+                    <div>
+                        <strong>Expert Team</strong>
+                        <p>Our experienced professionals possess diverse skills, enabling us to deliver innovative solutions across various industries.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="check-icon.png" alt="check">
+                    <div>
+                        <strong>Client-Centric Approach</strong>
+                        <p>We prioritize our clients, fostering relationships built on trust, communication, and commitment to achieving long-term success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="C:\Users\shara\OneDrive\Desktop\person-typing-on-laptop-computer-5710516.jpeg"  alt="IT Consulting">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+   <div class="container">
+        <h3>WHAT CLIENTS SAY</h3>
+        <h2>Client Success Stories</h2>
+        <div class="highlight"></div>
+        <p>Hear from our satisfied clients who have experienced the impact of our tailored IT solutions.</p>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>MindTech Solutions transformed our IT infrastructure. Their expertise and support guided us through a seamless transition process, greatly enhancing our operational efficiency.</p>
+                <div class="testimonial-header">
+                    <img src="john-doe.jpg" alt="John Doe">
+                    <strong>John Doe</strong>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>The consulting services from MindTech were invaluable. They understood our needs perfectly and provided solutions that exceeded our expectations.</p>
+                <div class="testimonial-header">
+                    <img src="jane-smith.jpg" alt="Jane Smith">
+                    <strong>Jane Smith</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<section class="cta-section">
+    <p>READY TO GROW?</p>
+    <h2>Take The Next Step Towards Innovation</h2>
+    <p>Connect with us today to discover how our tailored solutions can transform your business and enhance operational efficiency.</p>
+    <a href="#contact" class="cta-button">GET STARTED</a>
+</section>
+
+<section class="banner">
+  <div class="content">
+      <h3>Careers</h3>
+      <h1>Centrepoint offers exciting career opportunities</h1>
+      <a href="#" class="btn">Read More</a>
+  </div>
+</section>
+
+<footer>
+    <div class="footer-section">
+        <h3>MINDTECH SOLUTIONS</h3>
+        <p>MindTech is a global company specializing in software product and technology. ALIF offers customized software product and IT services. We provide "cutting-edge" solutions that deliver competitive advantage to our valued clients.</p>
+    </div>
+    <div class="footer-section">
+        <h3>QUICK LINKS</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>GET IN TOUCH</h3>
+        <p>1383, 5th Floor, 5th Block, HBR Layout Above Axis Bank Service Road, Outer Ring Rd, Bengaluru, Karnataka - 560045</p>
+        <p>Email: info@mindtechsolutions.org</p>
+        <p>Phone: 080 6951 0451</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+.logo {
+    height: 45px;
+}
+
+.logo img {
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Black";
+    src: url("../fonts/AvenirLTStd-Black.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-BlackOblique";
+    src: url("../fonts/AvenirLTStd-BlackOblique.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-BookOblique";
+    src: url("../fonts/AvenirLTStd-BookOblique.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Book";
+    src: url("../fonts/AvenirLTStd-Book.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Heavy";
+    src: url("../fonts/AvenirLTStd-Heavy.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Light";
+    src: url("../fonts/AvenirLTStd-Light.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-HeavyOblique";
+    src: url("../fonts/AvenirLTStd-HeavyOblique.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-LightOblique";
+    src: url("../fonts/AvenirLTStd-LightOblique.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Medium";
+    src: url("../fonts/AvenirLTStd-Medium.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-MediumOblique";
+    src: url("../fonts/AvenirLTStd-MediumOblique.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Oblique";
+    src: url("../fonts/AvenirLTStd-Oblique.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Roman";
+    src: url("../fonts/AvenirLTStd-Roman.otf") format("truetype");
+}
+
+/* Common Styles Start from Here */
+
+body {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: "AvenirLTSTD-Roman", sans-serif !important;
+    font-family: AvenirLTStd-Black;
+    background-color: #f9f9f9 !important;
+}
+
+.bg-global{
+    background-color: #f9f9f9 !important;
+}
+.AvenirLTStd-BlackOblique {
+    font-family: "AvenirLTStd-BlackOblique", sans-serif !important;
+}
+
+.AvenirLTStd-BookOblique {
+    font-family: "AvenirLTStd-BookOblique", sans-serif !important;
+}
+
+.AvenirLTStd-Book {
+    font-family: "AvenirLTStd-Book", sans-serif !important;
+}
+
+.AvenirLTStd-Heavy {
+    font-family: "AvenirLTStd-Heavy", sans-serif !important;
+}
+
+.AvenirLTStd-Light {
+    font-family: "AvenirLTStd-Light", sans-serif !important;
+}
+
+.AvenirLTStd-HeavyOblique {
+    font-family: "AvenirLTStd-HeavyOblique", sans-serif !important;
+}
+
+.AvenirLTStd-LightOblique {
+    font-family: "AvenirLTStd-LightOblique", sans-serif !important;
+}
+
+.AvenirLTStd-Medium {
+    font-family: "AvenirLTStd-Medium", sans-serif !important;
+}
+
+.AvenirLTStd-Oblique {
+    font-family: "AvenirLTStd-Oblique", sans-serif !important;
+}
+
+.AvenirLTStd-Roman {
+    font-family: "AvenirLTStd-Roman", sans-serif !important;
+}
+
+
+.bg-white {
+    background-color: #fff;
+}
+
+.container-bannerimage {
+    background-image: url(../images/home_banner.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+}
+
+.container-bannerimage .content {
+    color: #fff;
+    text-align: center;
+}
+
+.border-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    margin: 0 auto;
+    padding: 20px 0 25px 0;
+}
+
+.border-line .border-inner {
+    width: 18px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #3a2cc2;
+    display: flex;
+}
+
+.border-line .border-inner1 {
+    width: 58px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #3a2cc2;
+    display: flex;
+}
+
+a {
+    text-decoration: none !important;
+}
+.bg-white{
+    background-color: #fff;
+}
+
+.card-wrapper {
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.card-wrapper .trading-visualized-card {
+    border: none;
+    text-align: center;
+}
+
+.card-wrapper .trading-visualized-card .card-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.card-wrapper .trading-visualized-card .trading-visualized-card-title {
+    margin: 0 auto;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3b566e;
+}
+
+.card-wrapper .trading-visualized-card .trading-visualized-card-text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #888888;
+}
+
+.card-wrapper .trading-visualized-card .Subscribe-btn .Subscribe-btn-inner {
+    font-size: 18px;
+    color: #3a2cc2;
+    font-weight: 500;
+    text-align: center;
+    width: 280px;
+    height: 50px;
+    filter: drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.16));
+    background-color: #ffffff;
+    border: 2px solid #3a2cc2;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card-wrapper .trading-visualized-card .Subscribe-btn .Subscribe-btn-inner:hover {
+    background-color: #3a2cc2;
+    color: #fff;
+}
+
+.footer-background {
+    background-color: #000000; }
+    .footer-background .footer-border {
+      width: 95%;
+      height: 1px;
+      background-color: rgba(111, 139, 164, 0.2);
+      margin: 0 auto; }
+    .footer-background .top-content {
+      padding: 43px 0 0 30px; }
+      .footer-background .top-content .logo-footer {
+        padding-bottom: 30px; }
+        .footer-background .top-content .logo-footer .visualstructure {
+          font-size: 18px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.22;
+          letter-spacing: normal;
+          text-align: center;
+          color: #6f8ba4;
+          padding-left: 5px; }
+      .footer-background .top-content .footer-text-visual-structure {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6f8ba4;
+        padding-bottom: 30px; }
+      .footer-background .top-content .footer-list-items .list-heading {
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        text-align: left;
+        color: #f7fafd; }
+      .footer-background .top-content .footer-list-items .footer-list-items {
+        list-style: none;
+        padding: 0; }
+        .footer-background .top-content .footer-list-items .footer-list-items .footer-list-inner {
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.71;
+          letter-spacing: normal;
+          cursor: pointer;
+          text-align: left;
+          color: #6f8ba4;
+          padding: 10px 15px;
+          position: relative; }
+          .footer-background .top-content .footer-list-items .footer-list-items .footer-list-inner:before {
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: -10px;
+            /* right: 0; */
+            /* margin: 0 auto; */
+            /* width: 0; */
+            /* height: 0px; */
+            color: #6f8ba4;
+            margin-left: 9px;
+            border-top: solid 6px #6f8ba4;
+            border-left: solid 6px transparent;
+            border-right: solid 6px transparent;
+            transform: rotate(270deg); }
+          .footer-background .top-content .footer-list-items .footer-list-items .footer-list-inner:hover {
+            transition: 0.3s ease-in-out;
+            transform: translateX(15px); }
+          .footer-background .top-content .footer-list-items .footer-list-items .footer-list-inner a {
+            color: #6f8ba4; }
+            .footer-background .top-content .footer-list-items .footer-list-items .footer-list-inner a:hover {
+              color: #6f8ba4; }
+        .footer-background .top-content .footer-list-items .footer-list-items .address-list {
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.71;
+          letter-spacing: normal;
+          text-align: left;
+          color: #6f8ba4;
+          cursor: pointer;
+          padding: 10px 0px; }
+          .footer-background .top-content .footer-list-items .footer-list-items .address-list img {
+            padding-right: 5px; }
+        .footer-background .top-content .footer-list-items .footer-list-items .info-mail-id {
+          color: #6f8ba4; }
+          .footer-background .top-content .footer-list-items .footer-list-items .info-mail-id:hover {
+            color: #6f8ba4; }
+    .footer-background .bottom-content .footer-copyright {
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.85;
+      letter-spacing: normal;
+      text-align: left;
+      color: #6f8ba4;
+      padding: 15px 45px;
+      margin: 0; }
+  

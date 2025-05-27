@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Centrepoint</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc; 
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 40px;
+    }
+    .image-container {
+  flex: 1.5; /* Increase the size of the image container */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 300%; /* Makes the image take full width of its container */
+  height: 200px; /* Increase this value to make the image taller */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while filling the height */
+  border-radius: 10px; /* Optional: Adds rounded corners for a modern look */
+}
+
+    .content {
+      flex: 2;
+      padding-left: 40px;
+    }
+
+    .about-heading {
+      color: #1d4ed8;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #000;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    ul li span {
+      color: #1d4ed8;
+      font-size: 20px;
+      margin-right: 8px;
+    }
+
+    .dropdown {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .dropdown summary {
+      background-color: #f1f1f1;
+      padding: 12px 16px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #1d4ed8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .dropdown div {
+      padding: 12px 16px;
+      background-color: #fafafa;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="C:\Users\shara\OneDrive\Desktop\mindtree-solutions\New Images\about.jpg" alt="Team working together" />
+
+    </div>
+
+    <div class="content">
+      <div class="about-heading">About Us</div>
+      <h2>We are designers.<br>We are developers.</h2>
+      <p>
+        Centrepoint is a global company specializing in software product and technology. We provide "cutting-edge" solutions that deliver competitive advantage to our valued clients. Our disciplined management techniques, domain knowledge, and holistic approach constantly develop ways to enhance value to our clients.
+      </p>
+
+      <h3>We have amassed a talent pool of 60+ overachievers:</h3>
+      <ul>
+        <li><span>✔</span> Imaginative UX architects</li>
+        <li><span>✔</span> Industry certified software developers</li>
+        <li><span>✔</span> Battle-hardened digital strategists</li>
+        <li><span>✔</span> Inescapable project managers</li>
+      </ul>
+
+      <h3>Why choose Centrepoint?</h3>
+      <h4>Exposure to world-class Development</h4>
+      <p>
+        Relationships with companies at the forefront of technology provide our engineers with exposure to world-class development practices and emerging technologies.
+      </p>
+
+      <details class="dropdown">
+        <summary>Talented resource through training</summary>
+        <div>We provide financial assistance for job-related education and training.</div>
+      </details>
+
+      <details class="dropdown">
+        <summary>Professional Environment</summary>
+        <div>Centrepoint provides a safe, energetic, and professional environment.</div>
+      </details>
+
+      <details class="dropdown">
+        <summary>Performance Appraisals</summary>
+        <div>We reward individual excellence and encourage innovation.</div>
+      </details>
+
+      <details class="dropdown">
+        <summary>Employee Benefits</summary>
+        <div>We offer comprehensive benefits, including loans, health insurance, and more.</div>
+      </details>
+    </div>
+  </div>
+</body>
+</html>
